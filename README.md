@@ -65,35 +65,61 @@ yum -y install $1 & >/dev/null
     执行指令3
  fi
 
+4.1.2 【Should】存量可延期使用版本
+Windows Server、 2016及以上、仅限存量扩容与维护，不允许新项目选用。
 
- 操作系统技术标准
-本规范的相关内部规范或文件：不涉及 
-相关国际规范或文件一致性：不涉及 
-替代或作废的其它规范或文件：不涉及 
-版本历史信息：
+Linux Server、EulerOS 2.9、openEuler 20.03
+以下软件包或平台可保留在
+Redhat平台运行：Oracle DB、
+Hyperion、Biee、Datastage、
+Bo、Oracle EBS、Winchill、
+Tibco、HTM、OAM、SOA、
+Weblogic、Siebel等
 
-目的
-随着公司企业环境引入OS种类日趋增多，现根据各操作系统官方演进生命周期及华为IT对不同OS使用策略 约束，特定义了操作系统选型的技术标准。
+4.1.3 【Must】待日落版本
+Windows Server
+2012 R2
+2008
+2003
+已EOS，禁止新增
 
-适用范围
-本标准仅适用于公司内部企业应用（含生产、测试、容灾、业务自管）IT系统的新建和扩容，其他环境仅 供参考；对于目前已有的IT系统相关技术与产品，需制定升级计划并尽快完成升级。 例外情况：操作系统有客制化的，例如云管理平台（FusionComputer、FusionAccess等云化环境和周边配 套组件）等使用的OS，可不遵循本技术标准，按自身生命周期管理。本标准按年度刷新，如本规范未及时 刷新，版本使用标准以各软件厂商公告的EOS时间为准。
+Linux Server
+EulerOS 2.8及以下
+Redhat 7及以下
+CentOS 7及以下
+Ubuntu 20及以下
+SLES 11及以下
+已EOS，禁止新增
 
-3 概述 
-本标准定义了操作系统使用策略，准入、存量延续、待日落及推荐使用OS版本类型。 
 
-4 操作系统 
-4.1 操作系统使用要求 
-4.1.1 【Must】准入版本 
+4.2 【Should】操作系统群集使用要求
+Windows Server
+Windows Server Failover
+Clustering 2016/2019/2022
+仅限存量扩容与维护，不允许
+新项目选用，如需使用须获得
+系统与运营TMG批准。
 
-【Must】准入版本
-Linux Server 
-HCE 2.0及以上 EulerOS 2.10及以上 
-OpenEuler 22.03及以上LTS版 
-Ubuntu 22.04及以上LTS版 
-SLES 12及以上 
+Linux
+Veritas Cluster Server HA 6.x
+仅限存量扩容与维护，不允许
+新项目选用，如需使用须获得
+系统与运营TMG批准。
 
-优先使用HCE、欧拉OS 
 
- 
+名称 定义
+SE Standard Edition 标准版
+EE Enterprise Edition 企业版
+SLES SuSE Linux Enterprise Server
+RHEL Red Hat Enterprise Linux （红帽企业Linux）
+CentOS
+Community Enterprise Operating System (社
+区企业操作系统)
+OEL
+Oracle Enterprise Linux （甲骨文企业
+Linux）
+
+8 文件拟制/修订记录
+
  
  
