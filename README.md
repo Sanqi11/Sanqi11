@@ -65,61 +65,33 @@ yum -y install $1 & >/dev/null
     执行指令3
  fi
 
-4.1.2 【Should】存量可延期使用版本
-Windows Server、 2016及以上、仅限存量扩容与维护，不允许新项目选用。
+IT技术标准_数据库技术标准 
 
-Linux Server、EulerOS 2.9、openEuler 20.03
-以下软件包或平台可保留在
-Redhat平台运行：Oracle DB、
-Hyperion、Biee、Datastage、
-Bo、Oracle EBS、Winchill、
-Tibco、HTM、OAM、SOA、
-Weblogic、Siebel等
+随着公司企业环境引入数据库种类日趋增多，现根据各数据库官方演进生命周期及华为IT对不同数据库使
+用策略约束，特定义了数据库选型的技术标准。
 
-4.1.3 【Must】待日落版本
-Windows Server
-2012 R2
-2008
-2003
-已EOS，禁止新增
+本标准仅适用于公司内部企业应用（含生产、测试、容灾、业务自管）IT系统的新建和扩容，其他环境仅
+供参考；对于目前已有的IT系统相关技术与产品，可以维持现状不做强制遵从要求，但需制定升级计划并
+尽快完成升级。
 
-Linux Server
-EulerOS 2.8及以下
-Redhat 7及以下
-CentOS 7及以下
-Ubuntu 20及以下
-SLES 11及以下
-已EOS，禁止新增
+本标准定义了数据库使用策略，准入推荐的使用类型。
 
 
-4.2 【Should】操作系统群集使用要求
-Windows Server
-Windows Server Failover
-Clustering 2016/2019/2022
-仅限存量扩容与维护，不允许
-新项目选用，如需使用须获得
-系统与运营TMG批准。
-
-Linux
-Veritas Cluster Server HA 6.x
-仅限存量扩容与维护，不允许
-新项目选用，如需使用须获得
-系统与运营TMG批准。
-
-
-名称 定义
-SE Standard Edition 标准版
-EE Enterprise Edition 企业版
-SLES SuSE Linux Enterprise Server
-RHEL Red Hat Enterprise Linux （红帽企业Linux）
-CentOS
-Community Enterprise Operating System (社
-区企业操作系统)
-OEL
-Oracle Enterprise Linux （甲骨文企业
-Linux）
-
-8 文件拟制/修订记录
-
+4 数据库
+4.1 数据库使用要求
+4.1.1 【Must】准入版本
+MySQL 5.7.X 建议使用HIS RDS服务
+MongoDB
+4.0.X
+4.2.X 建议使用HIS RDS服务
+PostgreSQL 12.X(X>=17) 建议使用HIS RDS服务
+openGauss
+2.7.X
+3.220.X
+建议使用HIS RDS服务
+Oracle 11.2.0.3.15及以上 属涉A组件，该标准仅适用存量应用，不允许新增
+SQL Server SQL Server 2016 属涉A组件，该标准仅适用存量应用，不允许新增
+DB2 9.7及以上 属涉A组件，该标准仅适用存量应用，不允许新增
+HANA 2.0->2.00.037+ 属涉A组件，该标准仅适用存量应用，不允许新增
  
  
